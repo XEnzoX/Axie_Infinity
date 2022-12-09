@@ -654,7 +654,7 @@ const cards_all = {
             cardEffect: " Apply Bleed for 4 turns.",
             class: "Beast",
             tag: "attack",
-            img: "//Backend/Models/cards/beast/jaguar.png",
+            img: "/Backend/Models/cards/beast/jaguar.png",
             keyword: "-",
             id: 28,
             },
