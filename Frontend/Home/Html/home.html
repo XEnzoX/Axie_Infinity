@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <script src="https://kit.fontawesome.com/b0bd3f177d.js" crossorigin="anonymous"></script>    
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Style Home -->
+    <link rel="stylesheet" href="/Frontend/home/Css/initialBody_Home.css" />
+    <link rel="stylesheet" href="/Frontend/home/Css/header.css" />
+    <link rel="stylesheet" href="/Frontend/home/Css/TGVzY3JpcHRpb.css" />
+       <title>Home</title>
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <div class="div__logo">
+            <a href="http://127.0.0.1:5500/Frontend/home/Html/home.html">
+                <img class="logo" src="/Frontend/Src/Img/homeAxie.png" alt=""></a>
+        </div>
+        <nav class="menu__nav" id="menu__nav">            
+            <ul class="menu__ul">
+                <li><a class="list" href="/Frontend/Home/Html/origin.html"><i class="fa-sharp fa-solid fa-dna"></i>&nbsp;&nbsp;Origin</a></li>
+                <li><a class="list" href="#"><i class="fa-solid fa-school"></i>&nbsp;&nbsp;Scholarships</a></li>
+                <li><a class="list" href="#"><i class="fa-solid fa-laptop-file"></i>&nbsp;&nbsp;Scholarship registration</a></li>
+                <li><a class="list" href="#"><i class="fa-solid fa-bitcoin-sign"></i>&nbsp;&nbsp;Cryptocurrencies</a></li>
+                <li><a class="list" href="#"><i class="fa-solid fa-user-group"></i>&nbsp;&nbsp;Follow-up</a></li>
+            </ul>
+        </nav>
+        <div  data-pushbar-target="contenido" class="icono">
+            
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div id="contenido" data-pushbar-id="contenido" data-pushbar-direction="left">
+        <div class="cerrar">
+            <button id="cerrar" data-pushbar-close>X</button>
+        </div>
+    </div>
+
+    <div class="coming_updates">
+        <h1>Next Updates...!</h1>
+        <ul class="updates">
+            <li>Card finder (Origin)</li>
+            <li>Scholarship form</li>
+        </ul>
+    </div>
+                        <!-- Dedication for Clumsier -->
+    <script src="/Frontend/Src/JavaScript/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script> 
+    <script type="text/javascript">
+        const pushbar = new Pushbar({
+            blur: true,
+            overlay: true,
+        });
+    </script> 
+</body>
+</html>

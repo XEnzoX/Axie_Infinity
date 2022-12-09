@@ -1,0 +1,132 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+ 
+body{  
+   height: 614px;
+   background:#390872;
+}
+ 
+.logo{
+   width: 50px;
+}
+/* background: linear-gradient(50deg,#f38d62, 10%,#f45158); */
+ 
+
+.encabezado{
+   background: linear-gradient(10deg,#340768, 50%,#21034e);
+   height: 80px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 10px; 
+}  
+ 
+.menu__ul{
+   display: flex;
+   justify-content: space-between;
+   list-style: none;
+   /* gap: 10px; */
+} 
+
+.list{
+   text-decoration: none;
+   color: white;
+   padding: 15px 35px;
+   border-bottom: solid rgba(255, 255, 255, 0.164) 1px;
+} 
+
+.list:hover{
+   border-bottom: solid rgb(255, 255, 255) 1px;
+   background: rgb(5, 30, 43);
+}
+ 
+ 
+main{
+   padding: 20px;
+   text-align: justify;
+   /* background: linear-gradient(150deg,#0b1861, 50%,#0b7e7c); */
+   color: rgb(255, 255, 255);
+   background-image: linear-gradient(to bottom right, red, yellow);  
+}
+ 
+ 
+.icono{
+   display: none;
+}
+  
+.main-wrapping{
+   padding: 120px 253px;
+   color: aliceblue;
+}
+
+.wallet{
+   text-align: center; 
+}
+
+li {
+   display: flex; 
+}
+
+.encapsulated-crypto{
+   text-decoration: none;
+   list-style: none;
+}
+
+.encapsulated-time{
+   text-decoration: none;
+   list-style: none;
+}
+
+.market{
+   text-decoration: none;
+   list-style: none;
+}
+
+
+
+@media screen and (max-width:1100px){
+   
+   .icono{
+      display: block;
+      font-size: 25px;
+      color: #1A2980;
+      cursor: pointer;
+   }
+ 
+   .menu__nav{
+      display: none;
+   }
+ 
+   #contenido .menu__ul{
+      display: flex;
+      flex-direction: column;
+   }
+     
+   #contenido .menu__ul a{
+      display: block;
+   }
+ 
+   .cerrar{
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px;
+   }
+ 
+   #cerrar{
+      background: none;
+      font-size: 20px;
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+   } 
+ 
+   #cerrar:hover{
+      color: red;
+      transition: 0.5s;
+   }
+}
+   

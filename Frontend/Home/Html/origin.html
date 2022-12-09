@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Filter And Search</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/b0bd3f177d.js" crossorigin="anonymous"></script>    
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Style Home -->
+    <link rel="stylesheet" href="/Frontend/home/Css/header.css" />    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/Frontend/Home/Css/initialBody_Origin.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="div__logo">
+          <a href="http://127.0.0.1:5500/Frontend/home/Html/home.html">
+              <img class="logo" src="/Frontend/Src/Img/question001png.png" alt=""></a>
+      </div>
+      <nav class="menu__nav" id="menu__nav">            
+          <ul class="menu__ul">
+              <li><a class="list" href="/Frontend/Home/Html/origin.html"><i class="fa-sharp fa-solid fa-dna"></i>&nbsp;&nbsp;Origin</a></li>
+              <li><a class="list" href="#"><i class="fa-solid fa-school"></i>&nbsp;&nbsp;Scholarships</a></li>
+              <li><a class="list" href="#"><i class="fa-solid fa-laptop-file"></i>&nbsp;&nbsp;Scholarship registration</a></li>
+              <li><a class="list" href="#"><i class="fa-solid fa-bitcoin-sign"></i>&nbsp;&nbsp;Cryptocurrencies</a></li>
+              <li><a class="list" href="#"><i class="fa-solid fa-user-group"></i>&nbsp;&nbsp;Follow-up</a></li>
+          </ul>
+      </nav>
+      <div  data-pushbar-target="contenido" class="icono">
+          
+          <i class="fas fa-bars"></i>
+      </div>
+  </header>
+
+
+
+
+  <div id="contenido" data-pushbar-id="contenido" data-pushbar-direction="left">
+      <div class="cerrar">
+          <button id="cerrar" data-pushbar-close>X</button>
+      </div>
+  </div>
+
+  
+
+      <div class="wrapper">
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('All')"> All</button>
+        <button class="button-value" onclick="filterProduct('Aquatic')"> Aquatic </button>
+        <button class="button-value" onclick="filterProduct('Beast')"> Beast </button>
+        <button class="button-value" onclick="filterProduct('Bird')"> Bird </button>
+        <button class="button-value" onclick="filterProduct('Bug')"> Bug </button>
+        <button class="button-value" onclick="filterProduct('Plant')"> Plant </button>
+        <button class="button-value" onclick="filterProduct('Reptile')"> Reptile </button>
+      </div>
+      <div id="cardsAxie"></div>
+    </div>
+    <!-- Script -->
+    <!-- <script src="/Frontend/Src/JavaScript/originAllCards.js"></script> -->
+    <script src="/Frontend/Src/JavaScript/originCards.js"></script>
+  <script src="/Frontend/Src/JavaScript/home.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pushbar.js@1.0.0/src/pushbar.min.js"></script> 
+  <script type="text/javascript">
+      const pushbar = new Pushbar({
+          blur: true,
+          overlay: true,
+      });
+  </script> 
+  </body>
+</html>
